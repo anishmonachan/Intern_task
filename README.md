@@ -15,4 +15,4 @@ socket.accept(): The return value is a pair (conn, address) where conn is a new 
 At accept(), a new socket is created that is distinct from the named socket. This new socket is used solely for communication with this particular client.
 
 
-Limitations of the server code: The server code above can only interact with one client. If you try to connect with a second terminal it simply won’t reply to the new client. To let the server interact with multiple clients you need to use multi-threading. We rebuild the server script to accept multiple client connections:
+Limitations of the server code: The server code above can only interact with one client.in order to connect with a second terminal it simply won’t reply to the new client. To let the server interact with multiple clients, need to use multi-threading and rebuild the server script to accept multiple client connections:
